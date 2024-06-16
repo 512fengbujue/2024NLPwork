@@ -18,11 +18,11 @@ class Configuration:
         self.eos_id = 1
         self.pad_id = 2
         self.max_tokens = 128
-        self.embedding_dim = 128
-        self.hidden_dim = 128
-        self.num_layers = 2
-        self.learning_rate = 0.001
-        self.num_epochs = 50
+        self.embedding_dim = 256
+        self.hidden_dim = 256
+        self.num_layers = 5
+        self.learning_rate = 0.00001
+        self.num_epochs = 100
 def is_chinese_token(s):
     if len(s) == 1 and s[0] in ["“", "”", "：", "，", "。", "？", "！", "（", "）", "…", "、", "；"]:
         return True
